@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+
+:root{
+    --mainBlue: turquoise;
+    --transparentBlue:blue ;
+    --mainWhite: white ;
+    --mainBlack: black;
+    --mainGrey: grey;
+    --mainYellow: yellow;
+}
+
+body{
+    font-family: 'Poppins' , sans-serif;
+    color: black;
+    background: ivory;
+}
+/*section title*/
+.section-title--special{
+    background: tan;
+    color: maroon;
+    padding: 0.5rem 2rem;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100% );
+}
+/*preloader*/
+.preloader{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: ivory;
+    z-index: 999;
+}
+.hidePreloader{
+    display: none!important;
+}
+/*navbar*/
+.navbar{
+    background: var(--mainWhite);
+}
+.navbar-icon{
+    font-size: 2rem;
+    color:tan;
+}
+.navbar-toggler{
+    outline-color:goldenrod!important;
+}
+.nav-link{
+    color: var(--mainBlack);
+    text-transform: uppercase;
+}
+.nav-link:hover{
+    color: tan;
+}
+.nav-icon{
+    font-size: 2rem;
+    color: tan;
+    text-decoration: none!important;
+}
+
+label, input, textarea{
+    display: block;
+    font-size: large;
+    font-weight: 600;
+    color: maroon;
+    
+    
+}
+/*Footer*/
+.footer{
+    background-color: maroon;
+ }
+.footer-icon{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: tan;
+    transition: none 1s ease-in-out;
+}
+.footer-icon:hover{
+    color: ivory;
+}

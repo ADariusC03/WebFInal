@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="parts.css">
+                 
+    <!-- Font-awesome -->
+    <script src="/js/all.js"></script>
+    <title>Luxury Builder</title>
+</head>
+
+<body>
+
+<!-- end logo -->
+<!-- nav section -->
+
+    <nav class="navbar navbar-expand-lg px-3" id="navBar">
+        <a href="#" class="navbar-brand">
+            <img src="/img/logo.jpg" alt="logo" height="100" width="100">
+        </a>
+     <button class="navbar-toggler" type="button" data-toggle='collapse' data-target="#myNav">
+         <span class="navbar-icon">
+             <i class="fas fa-bars"></i>
+         </span>
+     </button>
+     <!-- collapse bar -->
+     <div class="collapse navbar-collapse" id="myNav">
+         <ul class="navbar-nav mx-auto">
+             <li class="nav-item active">
+                 <a href="/index.html" class="nav-link">
+                     Home
+                 </a>
+             </li>
+             <li class="nav-item">
+                 <a href="/Inventory/inventory.html" class="nav-link">
+                     Inventory
+                 </a>
+             </li>
+             <li class="nav-item">
+                 <a href="/Parts/parts.html" class="nav-link">
+                     Parts
+                 </a>
+             </li>
+             <li class="nav-item">
+                 <a href="/Contact/contact.html" class="nav-link">
+                     Contact
+                 </a>
+             </li>
+         </ul>
+         <!-- social icons -->
+         <div class="nav-icon d-none d-lg-block">
+             <a href="#" class="nav-icon">
+                 <i class="fab fa-facebook"></i>
+             </a>
+             <a href="#" class="nav-icon">
+                 <i class="fab fa-instagram"></i>
+             </a>
+             <a href="https://github.com/ADariusC03" class="nav-icon">
+                 <i class="fab fa-github"></i>
+             </a>
+         </div>
+     </div>
+    </nav>
+     <!--end nav section -->
+     <!-- Header -->
+     <section class="build py-4" id="build">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col d-flex flex-wrap text-uppercase justify-content-center">
+                    <h1 class="font-weight-bold align-self-center mx-1"><i class="fas fa-tools"></i>Luxury</h1>
+                    <h1 class="section-title--special mx-1">Builder</h1>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="d-flex justify-content-center">
+        <form class="w-50">
+            <input type="text" id="userid" class="form-contorl" readonly placeholder="ID" autocomplete="off">
+            <input type="text" id="make" class="form-contorl" placeholder="Make" autocomplete="off">
+            <div class="row">
+                <div class="col">
+                    <input type="text" id="model" class="form-contorl m-0" placeholder="Model" autocomplete="off">
+                    <input type="text" id="price" class="form-contorl m-0" placeholder="Price" autocomplete="off">
+                    
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- Create, Update, read, and Delete button functions -->
+    <div class="d-flex justify-content-center">
+        <form class="w-50">
+        <button class="btn btn-success" id="btn-create">Create</button>
+        <button class="btn btn-warning" id="btn-read">Read</button>
+        <button class="btn btn-primary" id="btn-update">Update</button>
+        <button class="btn btn-danger" id="btn-delete">Delete</button>
+        </form>
+    </div>
+    
+    <div class="container">
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">ID#</th>
+                <th scope="col">Make</th>
+                <th scope="col">Model</th>
+                <th scope="col">Price</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+                <!--
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td><i class="fas fa-edit btnedit"></i></td>
+                <td><i class="fas fa-trash-alt btndelete"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td><i class="fas fa-edit btnedit"></i></td>
+                <td><i class="fas fa-trash-alt btndelete"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+                <td><i class="fas fa-edit btnedit"></i></td>
+                <td><i class="fas fa-trash-alt btndelete"></i></td>
+              </tr>
+            --> 
+            </tbody>
+          </table>
+    </div>
+    <div class="container text-center">
+        <div id="notfound"></div>
+    </div>
+    <div class="w-100 btn btn-success insertmsg">Data Created Successfully.</div>
+    <div class="w-100 btn btn-success updatemsg">Data updated. Please refresh to see results.</div>
+    <div class="w-100 btn btn-success deletemsg">Data Deleted.</div>
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- Jquery -->
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <!-- bootstrap bundle js -->
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- API -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dexie/3.0.2/dexie.min.js" integrity="sha512-Vir5zWsvcM/cvv/YIpguFo1Ppx4mtFrY9llk6iJmx3jgBh5zcjP4Hz80xuEAoqwBTBUx9wSViEM2i8lCfv/i6g==" crossorigin="anonymous"></script>
+    <!-- main js -->
+    <script src="main.js" type="module"></script>
+</body>
+</html>
